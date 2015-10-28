@@ -1,0 +1,50 @@
+login-login-info:
+login-login:
+login-login-pwd:
+login-login-pwdValue:
+login-rologin-info:
+login-rologin:
+login-rologin-pwd:
+login-rologin-pwdValue:
+
+# v4.2
+login-current-info-1:
+login-current-info-2:
+login-current-info-3:
+login-current-info-4:
+login-webcast-info:
+login-webcast-link-object:
+login-webcast-link-image:
+login-webcast-link-location:
+login-rebuild:
+
+footer-text1: 2009 - 2015
+footer-currentRelease: Resources
+footer-feedback: LYRASIS support
+
+login-current: Welcome to CollectionSpace
+login-current-details: Your open-source collections management system.
+collection-object-otherNumberLabel: Other Number
+collection-object-objectNameLabel: Work Type
+collection-object-responsibleDepartmentsLabel: Collection
+collection-object-collectionLabel: Collection Focus
+collection-object-ownersLabel: Previous Owner
+group-responsibleDepartmentLabel: Collection
+collection-object-objectNameLabel: Object/work type
+collection-object-responsibleDepartmentsLabel: Classification terms
+collection-object-responsibleDepartmentLabel: Classification term
+collection-object-referenceLabel: Source brief citation
+collection-object-titleLabel: Title text
+collection-object-contentConceptsLabel: General subject terms
+collection-object-dimensionSummaryLabel: Dimensions description
+collection-object-objectProductionDateGroupLabel: Creation date
+collection-object-objectProductionDateLabel: Creation date
+collection-object-objectProductionOrganizationLabel: Creator identity
+collection-object-objectProductionOrganizationRoleLabel: Creator role
+collection-object-objectProductionPersononLabel: Creator identity
+collection-object-objectProductionPersonRoleLabel: Creator role
+collection-object-objectProductionPeopleLabel: Creator identity
+collection-object-objectProductionPeopleRoleLabel: Creator role
+preferredCA-termDisplayNameLabel: Generic concept term
+concept-scopeNoteLabel: Concept scope note
+concept-scopeNoteSourceLabel: Note source
