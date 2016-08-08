@@ -100,6 +100,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "cspace.localData", "citation-miniView"], localDataSourceDemands);
         fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "cspace.localData", "taxon-miniView"], localDataSourceDemands);
         fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "cspace.localData", "work-miniView"], localDataSourceDemands);
+        fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "cspace.localData", "material-miniView"], localDataSourceDemands);
         fluid.demands("cspace.autocomplete.authoritiesDataSource",  ["cspace.localData", "cspace.autocomplete"], {
             funcName: "cspace.autocomplete.testAuthoritiesDataSource",
             args: {
@@ -371,12 +372,23 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("cspace.autocomplete.popup.miniView.urnToCSID", ["cspace.autocomplete.popup.miniView", "citation-miniView"], authUrnToCSID);
         fluid.demands("cspace.autocomplete.popup.miniView.urnToCSID", ["cspace.autocomplete.popup.miniView", "taxon-miniView"], authUrnToCSID);
         fluid.demands("cspace.autocomplete.popup.miniView.urnToCSID", ["cspace.autocomplete.popup.miniView", "work-miniView"], authUrnToCSID);
+        fluid.demands("cspace.autocomplete.popup.miniView.urnToCSID", ["cspace.autocomplete.popup.miniView", "material-miniView"], authUrnToCSID);
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "person-miniView"], {
             options: {
                 protoTree: {
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                        }
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
                     },
                     field1: "${fields.birthDateGroup.dateDisplayDate}",
                     field2: "${fields.deathDateGroup.dateDisplayDate}",
@@ -397,6 +409,16 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
                     },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                        }
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                    },
                     field1: "${fields.foundingDateGroup.dateDisplayDate}",
                     field2: "${fields.dissolutionDateGroup.dateDisplayDate}",
                     field3: "${fields.historyNotes.0.historyNote}",
@@ -415,8 +437,18 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
-                    }
-                }
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                    	}
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                	}
+            	}
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "concept-miniView"], {
@@ -425,8 +457,18 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
-                    }
-                }
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                    	}
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                	}
+				}
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "place-miniView"], {
@@ -435,8 +477,18 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
-                    }
-                }
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                        }
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                	}
+            	}
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "citation-miniView"], {
@@ -445,8 +497,18 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
-                    }
-                }
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                    	}
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                	}
+            	}
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "taxon-miniView"], {
@@ -455,6 +517,16 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                        }
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
                     },
                     field1: "${fields.taxonTermGroup.0.termType}",
                     field2: "${fields.taxonTermGroup.0.termStatus}",
@@ -477,6 +549,36 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.termDisplayName}"
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                    	}
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                	}
+            	}
+            }
+        });
+        fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "material-miniView"], {
+            options: {
+                protoTree: {
+                    displayName: {
+                        target: "${miniView-link}",
+                        linktext: "${fields.termDisplayName}"
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                        }
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
                     }
                 }
             }
@@ -495,9 +597,19 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     displayName: {
                         target: "${miniView-link}",
                         linktext: "${fields.objectNumber}"
-                    }
-                }
-            }
+                    },
+                    broaderContext: {
+                        value: "${fields.broaderContext}",
+                        decorators: {
+                            type: "fluid",
+                            func: "cspace.util.urnToStringFieldConverter"
+                    	}
+                    },
+                    broaderContextLabel: {
+                        messagekey: "autocomplete-popup-miniView-broaderContextLabel"
+                	}
+            	}
+			}
         });
         var authDataSourceDemands = {
             funcName: "cspace.URLDataSource",
@@ -530,6 +642,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "citation-miniView"], authDataSourceDemands);
         fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "taxon-miniView"], authDataSourceDemands);
         fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "work-miniView"], authDataSourceDemands);
+        fluid.demands("cspace.autocomplete.popup.miniView.dataSource", ["cspace.autocomplete.popup.miniView", "material-miniView"], authDataSourceDemands);
         fluid.demands("cspace.autocomplete.authoritiesDataSource", "cspace.autocomplete", {
             funcName: "cspace.URLDataSource",
             args: {
@@ -600,6 +713,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("cspace.autocomplete", "cspace.recordEditor", {
             container: "{arguments}.0",
             mergeAllOptions: [{
+                disableDeprecated: true,
                 model: {
                     vocab: {
                         expander: {
@@ -620,6 +734,10 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                             resolver: "{permissionsResolver}",
                             permission: "update"
                         }, "create"]
+                    },
+                    handleWorkflowState: {
+                        funcName: "cspace.autocomplete.handleWorkflowState",
+                        args: ["{autocomplete}.applier", "{autocomplete}.model", "{vocab}"]
                     }
                 }
             }, "{arguments}.1"]
@@ -647,6 +765,10 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                             resolver: "{permissionsResolver}",
                             permission: "update"
                         }, "create"]
+                    },
+                    handleWorkflowState: {
+                        funcName: "cspace.autocomplete.handleWorkflowState",
+                        args: ["{autocomplete}.applier", "{autocomplete}.model", "{vocab}"]
                     }
                 },
                 components: {
@@ -821,6 +943,17 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         args: {
                             resolver: "{permissionsResolver}",
                             permission: "create",
+                            target: "{pageBuilderIO}.options.recordType"
+                        }
+                    }
+                },
+                showToggleActiveButton: {
+                    expander: {
+                        type: "fluid.deferredInvokeCall",
+                        func: "cspace.permissions.resolve",
+                        args: {
+                            resolver: "{permissionsResolver}",
+                            permission: "update",
                             target: "{pageBuilderIO}.options.recordType"
                         }
                     }
@@ -1890,6 +2023,20 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             }
         }); 
         fluid.demands("tabsList", ["cspace.tabs", "work"], {
+            container: "{tabs}.dom.tabsList",
+            options: {
+                model: {
+                    tabs: {
+                        primary: {
+                            "name": "tablist-primary",
+                            href: "#primaryTab",
+                            title: "tablist-primary"
+                        }
+                    }
+                }
+            }
+        });
+        fluid.demands("tabsList", ["cspace.tabs", "material"], {
             container: "{tabs}.dom.tabsList",
             options: {
                 model: {
