@@ -85,7 +85,13 @@
             waitForElement(options, function() {
                 $(options).each(function(idx, option) {
                   if (! option.value.match(/(_shared|location|offsite)/)) {
-                    option.remove();
+                    $(option).removeAttr("selected");
+                    $(option).remove();
+                  }
+
+                  if (option.value.match(/(_shared)/)) {
+                    $(option).attr("selected", "selected");
+                    $(option).parent().focus().change();
                   }
                 });
             });
