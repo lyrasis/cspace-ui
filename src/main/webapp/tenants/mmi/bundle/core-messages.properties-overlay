@@ -51,12 +51,14 @@ work-migratedEntityGroupLabel: Migrated Entity
 work-migratedEntityLabel: Entity
 work-migratedEntityTypeLabel: Entity Type
 
+#Media
 media-isPrimaryLabel: Is Primary?
 media-isOriginalMediaLabel: Is Original Media?
 media-mediaStatusLabel: Status
 media-rightsHolderLabel: License
 media-descriptionLabel: Notes
 media-titleLabel: Caption
+media-mediaViewTypeLabel: View Type
 
 #Cataloging
 object-identification-administrativeRemarksLabel: Administrative Remarks
