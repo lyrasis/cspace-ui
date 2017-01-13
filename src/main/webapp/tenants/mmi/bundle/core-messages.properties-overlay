@@ -61,13 +61,13 @@ media-titleLabel: Caption
 media-mediaViewTypeLabel: View Type
 
 #Cataloging
-object-identification-administrativeRemarksLabel: Administrative Remarks
-object-identification-provenanceLabel: Provenance
-object-identification-initialCatalogingCompletedLabel: Initial Cataloging Completed
-object-identification-additionalResearchRequiredLabel: Additional research required
-object-identification-approvedByCuratorLabel: Approved by Curator
-object-identification-artifactClassLabel: Artifact class
-object-identification-workTypeLabel: Work type
+collection-object-administrativeRemarksLabel: Administrative Remarks
+collection-object-provenanceLabel: Provenance
+collection-object-initialCatalogingCompletedLabel: Initial cataloging completed
+collection-object-additionalResearchRequiredLabel: Additional research required
+collection-object-approvedByCuratorLabel: Approved by Curator
+collection-object-artifactClassLabel: Artifact class
+collection-object-workTypeLabel: Work type
 
 collection-object-objectTitleLabel: Object title
 collection-object-captionLabel: Caption
@@ -77,9 +77,9 @@ collection-object-numberOfObjectsLabel: Extent
 collection-object-objectNameLabel: Artifact class / Work type
 
 collection-object-responsibleDepartmentLabel: Collection category
-collection-object-responsibleDepartmentLabel: Collection category
+
 collection-object-responsibleDepartmentsLabel: Collection category
-object-identification-responsible-departmentLabel: Collection category
+collection-object-responsible-departmentLabel: Collection category
 
 collection-object-contentLanguageLabel: Language
 collection-object-contentPlaceLabel: Place
@@ -101,7 +101,7 @@ collection-object-assocOrganizationTypeLabel: Associated Entity Type
 collection-object-assocOrganizationNoteLabel: Associated Entity Note
 collection-object-objectHistoryNoteLabel: Historical Note
 
-object-description-mmiMaterialLabel: Material
+collection-object-mmiMaterialLabel: Material
 object-description-mmiInscriptionContentLabel: Inscription content
 object-description-formatLabel: Format
 
