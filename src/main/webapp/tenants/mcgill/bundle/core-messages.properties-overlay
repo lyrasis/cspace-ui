@@ -1,9 +1,40 @@
 #Login
 
 login-current: Welcome to the Visual Arts Collection
-login-current-info-4: A museum without walls
-login-login: admin@vacdatabase.library.mcgill.ca
-login-rologin: reader@vacdatabase.library.mcgill.ca
+
+login-current-details:
+login-login-info:
+login-login:
+login-login-after:
+login-login-pwd:
+login-login-pwdValue:
+login-login-pwdValue-after:
+login-rologin-info:
+login-rologin:
+login-rologin-pwd:
+login-rologin-pwdValue:
+login-rologin-pwdValue-after:
+
+login-current-info-1:
+login-current-info-2:
+login-current-info-3:
+login-current-info-4:
+login-current-info-5:
+login-current-info-6:
+login-current-info-7:
+login-webcast-info:
+login-webcast-link-object:
+login-webcast-link-image:
+login-webcast-link-location:
+login-rebuild:
+login-footerFirst:
+login-footerLink:
+login-footerLast:
+
+footer-text1: 2009 - 2016
+footer-currentRelease: Resources
+footer-feedback: LYRASIS support
+
 
 # Fine and Contemporary Art Profile - Cataloging
 collection-object-objectNameLabel: Object/work type
