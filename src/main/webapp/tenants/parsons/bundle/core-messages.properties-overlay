@@ -1,8 +1,33 @@
-login-current: Welcome to the CollectionSpace Materials Authority Demo
-login-current-info-4: materials authority profile
-login-current-info-5: of CollectionSpace. If you’re interested in a version of CollectionSpace configured to meet the needs of a different domain, please visit our
-login-login: admin@materials.collectionspace.org
-login-rologin: reader@materials.collectionspace.org
+login-current: Parsons School of Design
+
+login-current-details:
+login-login-info:
+login-login:
+login-login-after:
+login-login-pwd:
+login-login-pwdValue:
+login-login-pwdValue-after:
+login-rologin-info:
+login-rologin:
+login-rologin-pwd:
+login-rologin-pwdValue:
+login-rologin-pwdValue-after:
+
+login-current-info-1:
+login-current-info-2:
+login-current-info-3:
+login-current-info-4:
+login-current-info-5:
+login-current-info-6:
+login-current-info-7:
+login-webcast-info:
+login-webcast-link-object:
+login-webcast-link-image:
+login-webcast-link-location:
+login-rebuild:
+login-footerFirst:
+login-footerLink:
+login-footerLast:
 
 collection-object-objectNumberLabel: Accession number
 collection-object-briefDescriptionsLabel: Sample Description
